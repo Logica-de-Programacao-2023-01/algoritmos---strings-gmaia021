@@ -1,0 +1,38 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var s1 string
+	fmt.Printf("Digite uma string")
+	fmt.Scan(&s1)
+
+	var s2 string
+	fmt.Printf("Digite outra string")
+	fmt.Scan(&s2)
+
+	s3 := s1 + " " + s2
+	fmt.Printf(s3)
+}
+
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
+
+func main() {
+
+	var x string
+
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	x = scanner.Text()
+
+	fmt.Print("Sua string tem ", len(x))
+
+}
+
